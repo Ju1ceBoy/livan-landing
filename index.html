@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>LIVAN</title>
+		<link rel="icon" href="assets/img/ico/fav.svg" type="image/x-icon" />
+		<link rel="stylesheet" href="/assets/css/fancybox.min.css" />
+		<link rel="stylesheet" href="/assets/css/swiper.min.css" />
+		<link rel="stylesheet" href="assets/css/select2.min.css" />
+		<link rel="stylesheet" href="/assets/css/main.css" />
+	</head>
+
+	<body>
+		<header>
+			<div class="header-box">
+				<div class="header-nav-box">
+					<img class="header-logo" src="assets/img/ico/logo.svg" alt="" />
+					<a class="header-tel" href="#">+ 7 (495) 111-11-11</a>
+					<div class="header-ham-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<nav class="header-nav">
+						<ul>
+							<li><a href="/#models" class="header__nav-link js-nav-link">Модельный ряд</a></li>
+							<li><a href="/#credit" class="header__nav-link js-nav-link">Автокредит</a></li>
+							<li><a href="/#equip" class="header__nav-link js-nav-link">Комплектации</a></li>
+							<li><a href="/#tradein" class="header__nav-link js-nav-link">Trade-In</a></li>
+							<li><a href="/#contacts" class="header__nav-link js-nav-link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-nav-menu-mob">
+					<ul>
+						<li><a href="/#models" class="header__nav-link js-nav-link">Модельный ряд</a></li>
+						<li><a href="/#credit" class="header__nav-link js-nav-link">Автокредит</a></li>
+						<li><a href="/#equip" class="header__nav-link js-nav-link">Комплектации</a></li>
+						<li><a href="/#tradein" class="header__nav-link js-nav-link">Trade-In</a></li>
+						<li><a href="/#contacts" class="header__nav-link js-nav-link">Контакты</a></li>
+					</ul>
+					<div class="header-col">
+						<div class="header-row">
+							<img src="assets/img/ico/pin.svg" alt="" />
+							<p>г. Москва, 33 км МКАД 6 ст. 6</p>
+						</div>
+						<div class="header-row">
+							<img src="assets/img/ico/clock.png" alt="" />
+							<p>Часы работы с 08:00 до 22:00</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<section class="home">
+				<picture>
+					<source srcset="/assets/img/main-banner__mob.webp" media="(max-width: 1024px)" />
+					<img class="main-banner" src="/assets/img/main-banner__desk.webp" alt="" />
+				</picture>
+				<div class="home-box">
+					<p class="home-title">Грандиозная распродажа LIVAN!</p>
+					<p class="home-subtitle">Выгода до 400 000₽!</p>
+					<div class="home-offers">
+						<div class="home-offers-item">
+							<p>Ставка от 4.9%</p>
+						</div>
+						<div class="home-offers-item">
+							<p>КАСКО в подарок</p>
+						</div>
+						<div class="home-offers-item">
+							<p>Скидка 70 000₽ при покупке в кредит</p>
+						</div>
+					</div>
+					<img class="home-pin" src="/assets/img/home-pin.png" alt="" />
+				</div>
+			</section>
+			<section class="promotion">
+				<div class="promotion-box">
+					<p class="timer-title">До повышения цен осталось:</p>
+					<div class="promotion-count-box">
+						<div class="timer">
+							<div class="time-count__item time-count__days">
+								<p class="time-count__val">00</p>
+								<small class="time-count__text">дней</small>
+							</div>
+							<span class="timer-points">:</span>
+							<div class="time-count__item time-count__hours">
+								<p class="time-count__val">00</p>
+								<small class="time-count__text">часов</small>
+							</div>
+							<span class="timer-points">:</span>
+							<div class="time-count__item time-count__minutes">
+								<p class="time-count__val">00</p>
+								<small class="time-count__text">минут</small>
+							</div>
+							<span class="timer-points">:</span>
+							<div class="time-count__item time-count__seconds">
+								<p class="time-count__val">00</p>
+								<small class="time-count__text">секунд</small>
+							</div>
+						</div>
+						<div class="loader" id="loader"></div>
+					</div>
+					<button data-fancybox="" data-src="#modal-get-offer" class="promotion-get-btn js--popup-btn btn-black">
+						<p>зафиксировать цену</p>
+					</button>
+				</div>
+			</section>
+			<section class="models" id="models">
+				<div class="models-title-wrapper">
+					<p class="models-title">Модельный ряд</p>
+				</div>
+				<div class="models-cards-box">
+					<div class="models-card">
+						<p class="card-car-title">LIVAN X6PRO</p>
+						<div class="card-wrapper">
+							<p class="card-bg-title">X6 PRO</p>
+							<div class="card-gallery">
+								<div class="swiper models-swiper">
+									<div class="swiper-wrapper">
+										<!-- {% for img in model.pivot.real_gallery %} -->
+										<div class="swiper-slide">
+											<a data-fancybox="" class="swiper-slide" href="/assets/img/car.png">
+												<img class="swiper-slide __ll-img" src="/assets/img/car.png" loading="lazy" alt="" />
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a data-fancybox="" class="swiper-slide" href="/assets/img/live/2.webp">
+												<img class="swiper-slide __ll-img" src="/assets/img/live/2.webp" loading="lazy" alt="" />
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a data-fancybox="" class="swiper-slide" href="/assets/img/live/3.webp">
+												<img class="swiper-slide __ll-img" src="/assets/img/live/3.webp" loading="lazy" alt="" />
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a data-fancybox="" class="swiper-slide" href="/assets/img/live/4.webp">
+												<img class="swiper-slide __ll-img" src="/assets/img/live/4.webp" loading="lazy" alt="" />
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a data-fancybox="" class="swiper-slide" href="/assets/img/live/5.webp">
+												<img class="swiper-slide __ll-img" src="/assets/img/live/5.webp" loading="lazy" alt="" />
+											</a>
+										</div>
+										<!-- {% endfor %} -->
+									</div>
+								</div>
+							</div>
+							<div class="card-inner">
+								<div class="card-top-info">
+									<div class="card-left-info"> </div>
+									<div class="card-right-info">
+										<p class="card-old-price">от 3 606 100₽</p>
+										<p class="card-new-price">от 2 606 100₽</p>
+									</div>
+								</div>
+								<ul class="card-benefits">
+									<li>
+										<img src="/assets/img/ico/percent.svg" alt="" />
+										<p>Взнос от 0%</p>
+									</li>
+									<li>
+										<img src="/assets/img/ico/percent.svg" alt="" />
+										<p>Гарантия 5 лет</p>
+									</li>
+									<li>
+										<img src="/assets/img/ico/gift.svg" alt="" />
+										<p>КАСКО в подарок</p>
+									</li>
+									<li>
+										<img src="/assets/img/ico/hand.svg" alt="" />
+										<p>3 платежа по кредиту за наш счет</p>
+									</li>
+								</ul>
+								<div class="card-buttons">
+									<button data-fancybox="" data-src="#modal-credit" class="js--popup-btn btn-models-credit btn-black">
+										<p>Получить предложение</p>
+									</button>
+									<button data-fancybox="" data-src="#modal-get-offer" class="js--popup-btn btn-models-get btn-border">
+										<p>в кредит от ХХ ХХХ ₽/мес</p>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="credit" id="credit">
+				<picture>
+					<source class="credit-back" srcset="/assets/img/credit-bg__mob.webp" media="(max-width: 1024px)" />
+					<img class="credit-back" src="/assets/img/credit-bg__desk.webp" alt="Абстрактное изображение" />
+				</picture>
+				<div class="credit-container-title">Автокредит</div>
+				<div class="credit-wrapper">
+					<div class="credit-title">
+						<span
+							>LIVAN в кредит <br />
+							по условиям 2021 года</span
+						>
+					</div>
+					<div class="credit-benefits">
+						<div class="credit-benefits-item">
+							<span>Ставка от <b>4.9%</b></span>
+						</div>
+						<div class="credit-benefits-item">
+							<span>Первый взнос 0%</span>
+						</div>
+						<div class="credit-benefits-item">
+							<span>3 платежа по кредиту за наш счет</span>
+						</div>
+						<div class="credit-benefits-item">
+							<span>Скидка <b>70 000₽</b> при покупке в кредит</span>
+						</div>
+					</div>
+					<form class="credit-form" action="">
+						<input name="name" class="form-tel number-mask" type="name" placeholder="Ваше имя" required />
+						<input name="phone" class="form-tel number-mask" type="tel" placeholder="+ 7 (___) ___-__-__" required />
+						<button class="form-btn js--send-btn btn-black" type="submit">
+							<p>Рассчитать кредит</p>
+						</button>
+						<label class="form-checkbox-container">
+							<input type="hidden" name="carbrand" value="" />
+							<input type="hidden" name="carmodel" value="" />
+							<input type="hidden" name="carequipment" value="" />
+							<input type="hidden" name="carprice" value="" />
+							<input type="hidden" name="carcolor" value="" />
+							<input type="hidden" name="url" value="{{ url_current() }}" />
+							<input type="hidden" name="idtype" value="201" />
+							<input class="form-checkbox" type="checkbox" name="" checked required />
+							<span class="custom-checkbox"><img class="check" src="assets/img/ico/check.svg" alt="" /></span>
+							<span class="form-text"
+								>Нажимая кнопку, Вы даете согласие на обработку <a style="color: inherit; text-decoration: underline" target="_blank" href="/policy"><b>персональных данных</b></a></span
+							>
+						</label>
+					</form>
+				</div>
+			</section>
+			<section class="equip" id="equip"
+				>msk-dealer-geely.ru
+				<div class="equip-title-wrapper">
+					<p class="equip-title">Комплектации</p>
+				</div>
+				<div class="equip-filter">
+					<select class="js--equipment" name="param1">
+						<option value="">Модель</option>
+						<!-- {% for equipment in equipments %} -->
+						<option value="{{ equipment.id }}" data-model="{{ equipment.model.id }}">2020</option>
+						<option value="{{ equipment.id }}" data-model="{{ equipment.model.id }}">2021</option>
+						<option value="{{ equipment.id }}" data-model="{{ equipment.model.id }}">2022</option>
+						<option value="{{ equipment.id }}" data-model="{{ equipment.model.id }}">2023</option>
+						<!-- {% endfor %} -->
+					</select>
+					<select class="js--equipment" name="param1">
+						<option value="">Комплектация</option>
+						<!-- {% for equipment in equipments %} -->
+						<option value="{{ equipment.id }}" data-model="{{ equipment.model.id }}">2020</option>
+						<option value="{{ equipment.id }}" data-model="{{ equipment.model.id }}">2021</option>
+						<option value="{{ equipment.id }}" data-model="{{ equipment.model.id }}">2022</option>
+						<option value="{{ equipment.id }}" data-model="{{ equipment.model.id }}">2023</option>
+						<!-- {% endfor %} -->
+					</select>
+				</div>
+				<div class="equip-cards-box">
+					<div class="equip-card">
+						<div class="equip-card-wrapper">
+							<div class="equip-card-car-title-wrapper">
+								<div class="equip-card-car-title">livan x6 pro luxury</div>
+								<img src="/assets/img/ico/equip-arrow.svg" alt="" class="arrow" />
+							</div>
+							<div class="equip-card-car-img-wrapper">
+								<img src="assets/img/equip-car.png" alt="" />
+							</div>
+							<div class="equip-specs-wrapper">
+								<div class="equip-specs-text">
+									<div class="equip-specs mob-hide">
+										<p class="equip-hp">150 л.с./</p>
+										<br />
+										<p class="equip-drive">передний/</p>
+										<p class="equip-gearbox">МКПП 5</p>
+									</div>
+
+									<div class="equip-specs-mob desk-hide">
+										<div class="equip-specs-item">
+											<img src="/assets/img/ico/thunder.svg" alt="" />
+											<p>150 л.с.</p>
+										</div>
+										<div class="equip-specs-item">
+											<img src="/assets/img/ico/gear.svg" alt="" />
+											<p>Передний</p>
+										</div>
+										<div class="equip-specs-item">
+											<img src="/assets/img/ico/transmission.svg" alt="" />
+											<p>МКПП 5</p>
+										</div>
+									</div>
+									<div class="equip-prices-wrapper">
+										<div class="equip-credit-price">от 99 999₽/мес.</div>
+										<div class="equip-prices">
+											<div class="equip-prices-old">2 885 000 ₽</div>
+											<div class="equip-prices-new">от 1 999 999₽</div>
+										</div>
+									</div>
+								</div>
+								<button data-fancybox="" data-src="#modal-get-offer" class="js--popup-btn equip-card-car-about btn-black">
+									<p>узнать подробнее</p>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="equip-show-more-wrapper">
+					<div class="equip-show-more">
+						<p>Показать еще</p>
+						<img src="/assets/img/ico/equip-arrow.svg" alt="" />
+					</div>
+				</div>
+			</section>
+
+			<section class="tradein" id="tradein">
+				<picture>
+					<source class="tradein-back" srcset="/assets/img/tradein-bg__mob.webp" media="(max-width: 1024px)" />
+					<img class="tradein-back" src="/assets/img/tradein-bg__desk.webp" alt="Абстрактное изображение" />
+				</picture>
+				<div class="tradein-container-title">Trade-In</div>
+				<div class="tradein-wrapper">
+					<div class="tradein-title">
+						<span>Обменяйте свой авто на новый <br />livan с максимальной выгодой</span>
+					</div>
+					<div class="tradein-benefits">
+						<div class="tradein-benefits-item">
+							<span>Скидка до <b>300 000₽</b> на покупку нового автомобиля</span>
+						</div>
+						<div class="tradein-benefits-item">
+							<span>Оценка авто <b>до 95%</b> рыночной стоимости</span>
+						</div>
+						<div class="tradein-benefits-item">
+							<span>Возможность учета старого авто в качестве <b>первого взноса</b></span>
+						</div>
+					</div>
+					<form class="tradein-form" action="">
+						<input name="name" class="form-tel number-mask" type="name" placeholder="Ваше имя" required />
+						<input name="phone" class="form-tel number-mask" type="tel" placeholder="+ 7 (___) ___-__-__" required />
+						<button class="form-btn js--send-btn btn-black" type="submit">
+							<p>Рассчитать кредит</p>
+						</button>
+						<label class="form-checkbox-container">
+							<input type="hidden" name="carbrand" value="" />
+							<input type="hidden" name="carmodel" value="" />
+							<input type="hidden" name="carequipment" value="" />
+							<input type="hidden" name="carprice" value="" />
+							<input type="hidden" name="carcolor" value="" />
+							<input type="hidden" name="url" value="{{ url_current() }}" />
+							<input type="hidden" name="idtype" value="201" />
+							<input class="form-checkbox" type="checkbox" name="" checked required />
+							<span class="custom-checkbox"><img class="check" src="assets/img/ico/check.svg" alt="" /></span>
+							<span class="form-text"
+								>Нажимая кнопку, Вы даете согласие на обработку <a style="color: inherit; text-decoration: underline" target="_blank" href="/policy"><b>персональных данных</b></a></span
+							>
+						</label>
+					</form>
+				</div>
+			</section>
+
+			<section class="contacts" id="contacts">
+				<picture>
+					<source class="contacts-back" srcset="/assets/img/map__mob.webp" media="(max-width: 1024px)" />
+					<img class="contacts-back" src="/assets/img/map.webp" alt="Абстрактное изображение" />
+				</picture>
+				<div class="contacts-inner">
+					<div class="contacts-logo">
+						<img src="assets/img/ico/logo-map.svg" alt="" />
+					</div>
+					<div class="contacts-text-box">
+						<div class="contacts-tel">
+							<img src="assets/img/ico/phone.svg" alt="" />
+							<p>+ 7 (495) 111-11-11</p>
+						</div>
+						<div class="contacts-address">
+							<img src="assets/img/ico/pin.svg" alt="" />
+							<p>г. Москва, 33 км МКАД 6 ст. 6</p>
+						</div>
+						<div class="contacts-tel">
+							<img src="assets/img/ico/clock.png" alt="" />
+							<p>Часы работы с 08:00 до 22:00</p>
+						</div>
+					</div>
+					<button data-fancybox="" data-src="#modal-get-offer" class="js--popup-btn contacts-btn btn-black"> обратный звонок </button>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<!-- <div class="header-box">
+				<div class="header-nav-box">
+					<img class="header-logo" src="assets/img/ico/logo.svg" alt="" />
+					<nav class="header-nav">
+						<ul>
+							<li><a href="" class="header__nav-link js-nav-link">Модельный ряд</a></li>
+							<li><a href="" class="header__nav-link js-nav-link">Комплектации</a></li>
+							<li><a href="" class="header__nav-link js-nav-link">Автокредит</a></li>
+							<li><a href="" class="header__nav-link js-nav-link">Trade-In</a></li>
+							<li><a href="" class="header__nav-link js-nav-link">Контакты</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div> -->
+			<div class="footer-inner">
+				<div class="footer-wrapper">
+					<div class="footer-license"
+						>ОБЩЕСТВО С ОГРАНИЧЕННОЙ ОТВЕТСТВЕННОСТЬЮ "ЮНИОН КАРС"<br />
+						ИНН 9728009661, ОГРН 1207700280732, КПП 772501001 от 10 августа 2020 г. Юридический адрес: <br />
+						115191, город Москва, Малая Тульская ул, д. 16, помещ. 4/1п</div
+					>
+					<div class="footer-more">
+						АО «Тинькофф Банк» Лицензия ЦБ РФ № 2673 от 24.03.2015 г. АО «Тинькофф Страхование» лицензия СИ № 0191 от 19.05.2015 г. Обращаем ваше внимание на то, что данный Интернет-сайт носит исключительно информационный характер и ни при каких условиях не является публичной офертой, определяемой положениями статьей 435, 437, 494 Гражданского кодекса Российской Федерации. Для получения подробной информации о стоимости автомобилей обращайтесь в отдел продаж. Свою ставку и максимальную сумму кредита вы сможете узнать после того, как подадите заявку. Они зависят от данных, которые вы укажете в заявке, и от вашей кредитной истории.Технические характеристики и оборудование автомобилей, условия приобретения автомобилей, цены, спецпредложения и комплектации автомобилей, указанные на сайте, приведены для примера и могут быть изменены в любое время без предварительного уведомления. Для получения подробной информации об актуальных ценах на продукцию и наличии автомобилей обращайтесь в дилерский центр. Приобретение любой продукции бренда осуществляется в соответствии с условиями индивидуального договора купли-продажи. Представленное изображение автомобиля может отличаться от реализуемого. Не
+						является публичной офертой. На данном сайте используются зарегистрированные товарные знаки, перечисленные в разделе Правовая информация. Указана цена на автомобиль в начальной комплектации на автомобили 2022 модельного года. Для заказов с подтвержденной производственной к.н. 50/2021. Количество автомобилей ограничено. Размер платежа в день означает величину затрат заемщика, эквивалентную ежемесячному платежу при условии 30 (тридцати) календарных дней в месяце, взявшего кредит по программе кредитования ВТБ, Сетелем, Русфинанс Банк, Банк Союз, Экспобанк, Совкомбанк, Альфа Банк, Тинькофф, Плюсбанк, Банк Оранжевый, Росбанк, Ситибанк, (далее – «Банк») на покупку нового автомобиля с расчетной розничной ценой в начально комплектации, на срок 60 мес., с первоначальным взносом 57,92% от стоимости автомобиля, остаточным платежом (далее ОП) 20% от стоимости автомобиля и процентной ставкой 14,5%. Данная информация не является офертой Банка, расчет является приблизительным. Полная стоимость кредита и конкретные параметры кредита будут рассчитаны на основании Анкеты клиента, направляемой в Банк для одобрения кредитной заявки. Основные условия кредитования ВТБ, Сетелем, Русфинанс
+						Банк, Банк Союз, Экспобанк, Совкомбанк, Альфа Банк, Тинькофф, Плюсбанк, Банк Оранжевый, Росбанк, Ситибанк, (далее Банк) на покупку нового автомобиля по продукту «Кредит с остаточным платежом на приобретение нового автомобиля» валюта кредита – рубли РФ; сумма кредита от 120 тыс. до 5.8 млн. ₽ Процентная ставка (в % годовых) при сроке от 12 до 60 мес. – 14,5% при первоначальном взносе (далее ПВ) от 15% (включительно). При ПВ менее 20% необходимо предоставление полного пакета документов. Минимальный размер остаточного платежа (далее ОП) в % от стоимости автомобиля – 20%; максимальный размер ОП при сроке при сроке кредита 12 мес. – 60%, при сроках от 13 до 24 мес. – 50%, при сроках от 25 до 36 мес. – 45%, при сроках от 37 до 48 мес. – 30%, при сроках от 49 до 60 мес. – 20%. Обеспечение по кредиту – залог приобретаемого автомобиля. Условия кредита действительны до 01.09.2024 и могут быть изменены Банком. Лицензия ЦБ РФ № 3500, г. Москва * Подробности уточняйте в отделе продаж. АО «Тинькофф Банк» Лицензия ЦБ РФ № 2673 от 24.03.2015 г. АО «Тинькофф Страхование» лицензия СИ № 0191 от 19.05.2015 г. Свою ставку и максимальную сумму кредита вы сможете узнать после того, как
+						подадите заявку. Они зависят от данных, которые вы укажете в заявке, и от вашей кредитной истории.*.Первоначальный взнос 0% - от стоимости транспортного средства. Кредитор — ПАО «Совкомбанк» (лицензия ЦБ РФ № 963 от 05.12.2014, далее — «Банк»). Валюта кредита — рубль РФ. Первоначальный взнос — от 0% цены приобретаемого ТС; сумма кредита — от 90 000 руб.; срок кредита — 24-72 мес.; процентная ставка — от 23,0% годовых; обеспечение по кредиту — залог приобретаемого ТС; возврат кредита — ежемесячные (аннуитетные) платежи; При обязательном условии страхования жизни, КАСКО в страховых компаниях-партнерах на весь срок действия кредитного договора, а также покупки доп. оборудования. Не оферта (ст. 437 ГК РФ). Действует с 6 июня на новые автомобили. Все подробности предоставления кредитной программы и полные условия уточняйте у менеджеров
+						<!-- <a href="">Подробнее</a> -->
+					</div>
+				</div>
+				<div class="footer-nav">
+					<a href="">Политика конфиденциальности</a>
+					<a href="">Пользовательское соглашение</a>
+				</div>
+			</div>
+		</footer>
+
+		<section data-modal id="modal-get-offer" class="modal-get-offer hidden padding">
+			<picture>
+				<source class="modal-credit-back" srcset="/assets/img/credit-back-mob.webp" media="(max-width: 1024px)" />
+				<img class="modal-credit-back" src="/assets/img/modal-credit-bg.webp" alt="Абстрактное изображение" />
+			</picture>
+			<div class="modal-box">
+				<p class="modal-title"
+					>LIVAN в кредит <br />
+					по условиям 2021 года</p
+				>
+				<form class="modal-form" action="">
+					<input name="phone" class="form-tel number-mask modal-input" type="name" placeholder="Имя" required />
+					<input name="phone" class="form-tel number-mask modal-input" type="tel" placeholder="+ 7 (___) ___-__-__" required />
+					<button class="form-btn js--send-btn modal-btn" type="submit">
+						<p>Купить в кредит</p>
+					</button>
+					<label class="form-checkbox-container">
+						<input type="hidden" name="carbrand" value="" />
+						<input type="hidden" name="carmodel" value="" />
+						<input type="hidden" name="carequipment" value="" />
+						<input type="hidden" name="carprice" value="" />
+						<input type="hidden" name="carcolor" value="" />
+						<input type="hidden" name="url" value="{{ url_current() }}" />
+						<input type="hidden" name="idtype" value="201" />
+						<input class="form-checkbox" type="checkbox" name="" checked required />
+						<span class="custom-checkbox"><img class="check" src="assets/img/ico/check.webp" alt="" /></span>
+						<span class="form-text"
+							>Нажимая кнопку <b>"Купить кредит”</b> Вы даете согласие на обработку своих <a style="color: inherit; text-decoration: underline" target="_blank" href="/policy"><b>персональных данных</b></a></span
+						>
+					</label>
+				</form>
+			</div>
+		</section>
+		<section data-modal id="modal-credit" class="modal-credit hidden padding">
+			<picture>
+				<source class="modal-credit-back" srcset="/assets/img/credit-back-mob.webp" media="(max-width: 1024px)" />
+				<img class="modal-credit-back" src="/assets/img/modal-get-bg.webp" alt="Абстрактное изображение" />
+			</picture>
+			<div class="modal-box">
+				<p class="modal-title"
+					><span>Получите лучшее</span><br />
+					предложение на покупку автомобиля</p
+				>
+				<form class="modal-form" action="">
+					<input name="phone" class="form-tel number-mask" type="name" placeholder="Имя" required />
+					<input name="phone" class="form-tel number-mask" type="tel" placeholder="+ 7 (___) ___-__-__" required />
+					<button class="form-btn js--send-btn modal-btn" type="submit">
+						<p>Получить предложение</p>
+					</button>
+					<label class="form-checkbox-container">
+						<input type="hidden" name="carbrand" value="" />
+						<input type="hidden" name="carmodel" value="" />
+						<input type="hidden" name="carequipment" value="" />
+						<input type="hidden" name="carprice" value="" />
+						<input type="hidden" name="carcolor" value="" />
+						<input type="hidden" name="url" value="{{ url_current() }}" />
+						<input type="hidden" name="idtype" value="201" />
+						<input class="form-checkbox" type="checkbox" name="" checked required />
+						<span class="custom-checkbox"><img class="check" src="assets/img/ico/check.webp" alt="" /></span>
+						<span class="form-text"
+							>Нажимая кнопку <b>“Получить предложение”</b> Вы даете согласие на обработку своих <a style="color: inherit; text-decoration: underline" target="_blank" href="/policy"><b>персональных данных</b></a></span
+						>
+					</label>
+				</form>
+			</div>
+		</section>
+		<section data-modal id="modal-thanks" class="modal-thanks hidden padding">
+			<div class="modal-thanks-box">
+				<p class="modal-thanks-title">Спасибо за заявку!</p>
+				<p class="modal-thanks-text">Наш менеджер свяжется с Вами в ближайшее время!</p>
+			</div>
+		</section>
+		<section data-modal id="modal-error" class="modal-thanks hidden padding">
+			<div class="modal-thanks-box">
+				<p class="modal-error-title">Вы уже оставляли заявку!</p>
+				<p class="modal-thanks-text">Наш менеджер свяжется с Вами через 2-3 минуты</p>
+			</div>
+		</section>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/lazy.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(window).on('scroll', function () {
+					lazyLoad.img(5)
+					lazyLoad.bg(30)
+				})
+				if ($(window).scrollTop() > 10) {
+					lazyLoad.img(5)
+					lazyLoad.bg(30)
+				}
+			})
+		</script>
+		<script src="assets/js/timer.js"></script>
+		<script src="assets/js/libs/fancybox.min.js"></script>
+		<script src="assets/js/libs/select2.min.js"></script>
+		<script src="assets/js/libs/masked-input.min.js"></script>
+		<script src="assets/js/libs/swiper-bundle.min.js"></script>
+		<script src="assets/js/filter.js"></script>
+		<script src="assets/js/default.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>
