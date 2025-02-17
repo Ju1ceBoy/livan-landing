@@ -432,70 +432,74 @@
 		</footer>
 
 		<section data-modal id="modal-get-offer" class="modal-get-offer hidden padding">
-			<picture>
-				<source class="modal-credit-back" srcset="./assets/img/credit-back-mob.webp" media="(max-width: 1024px)" />
-				<img class="modal-credit-back" src="./assets/img/modal-credit-bg.webp" alt="Абстрактное изображение" />
-			</picture>
-			<div class="modal-box">
-				<p class="modal-title"
-					>LIVAN в кредит <br />
-					по условиям 2021 года</p
-				>
-				<form class="modal-form" action="">
-					<input name="phone" class="form-tel number-mask modal-input" type="name" placeholder="Имя" required />
-					<input name="phone" class="form-tel number-mask modal-input" type="tel" placeholder="+ 7 (___) ___-__-__" required />
-					<button class="form-btn js--send-btn modal-btn" type="submit">
-						<p>Купить в кредит</p>
-					</button>
-					<label class="form-checkbox-container">
-						<input type="hidden" name="carbrand" value="" />
-						<input type="hidden" name="carmodel" value="" />
-						<input type="hidden" name="carequipment" value="" />
-						<input type="hidden" name="carprice" value="" />
-						<input type="hidden" name="carcolor" value="" />
-						<input type="hidden" name="url" value="{{ url_current() }}" />
-						<input type="hidden" name="idtype" value="201" />
-						<input class="form-checkbox" type="checkbox" name="" checked required />
-						<span class="custom-checkbox"><img class="check" src="./assets/img/ico/check.webp" alt="" /></span>
-						<span class="form-text"
-							>Нажимая кнопку <b>"Купить кредит”</b> Вы даете согласие на обработку своих <a style="color: inherit; text-decoration: underline" target="_blank" href="/policy"><b>персональных данных</b></a></span
-						>
-					</label>
-				</form>
-			</div>
+            <div class="modal-wrapper">
+                <picture>
+                    <source class="modal-credit-back" srcset="./assets/img/credit-back-mob.webp" media="(max-width: 1024px)" />
+                    <img class="modal-credit-back" src="./assets/img/modal-credit-bg.webp" alt="Абстрактное изображение" />
+                </picture>
+                <div class="modal-box">
+                    <p class="modal-title"
+                        >LIVAN в кредит <br />
+                        по условиям 2021 года</p
+                    >
+                    <form class="modal-form" action="">
+                        <input name="phone" class="form-tel number-mask modal-input" type="name" placeholder="Имя" required />
+                        <input name="phone" class="form-tel number-mask modal-input" type="tel" placeholder="+ 7 (___) ___-__-__" required />
+                        <button class="form-btn js--send-btn modal-btn" type="submit">
+                            <p>Купить в кредит</p>
+                        </button>
+                        <label class="form-checkbox-container">
+                            <input type="hidden" name="carbrand" value="" />
+                            <input type="hidden" name="carmodel" value="" />
+                            <input type="hidden" name="carequipment" value="" />
+                            <input type="hidden" name="carprice" value="" />
+                            <input type="hidden" name="carcolor" value="" />
+                            <input type="hidden" name="url" value="{{ url_current() }}" />
+                            <input type="hidden" name="idtype" value="201" />
+                            <input class="form-checkbox" type="checkbox" name="" checked required />
+                            <span class="custom-checkbox"><img class="check" src="./assets/img/ico/check.webp" alt="" /></span>
+                            <span class="form-text"
+                                >Нажимая кнопку <b>"Купить кредит”</b> Вы даете согласие на обработку своих <a style="color: inherit; text-decoration: underline" target="_blank" href="/policy"><b>персональных данных</b></a></span
+                            >
+                        </label>
+                    </form>
+                </div>
+            </div>
 		</section>
 		<section data-modal id="modal-credit" class="modal-credit hidden padding">
-			<picture>
-				<source class="modal-credit-back" srcset="./assets/img/credit-back-mob.webp" media="(max-width: 1024px)" />
-				<img class="modal-credit-back" src="./assets/img/modal-get-bg.webp" alt="Абстрактное изображение" />
-			</picture>
-			<div class="modal-box">
-				<p class="modal-title"
-					><span>Получите лучшее</span><br />
-					предложение на покупку автомобиля</p
-				>
-				<form class="modal-form" action="">
-					<input name="phone" class="form-tel number-mask" type="name" placeholder="Имя" required />
-					<input name="phone" class="form-tel number-mask" type="tel" placeholder="+ 7 (___) ___-__-__" required />
-					<button class="form-btn js--send-btn modal-btn" type="submit">
-						<p>Получить предложение</p>
-					</button>
-					<label class="form-checkbox-container">
-						<input type="hidden" name="carbrand" value="" />
-						<input type="hidden" name="carmodel" value="" />
-						<input type="hidden" name="carequipment" value="" />
-						<input type="hidden" name="carprice" value="" />
-						<input type="hidden" name="carcolor" value="" />
-						<input type="hidden" name="url" value="{{ url_current() }}" />
-						<input type="hidden" name="idtype" value="201" />
-						<input class="form-checkbox" type="checkbox" name="" checked required />
-						<span class="custom-checkbox"><img class="check" src="./assets/img/ico/check.webp" alt="" /></span>
-						<span class="form-text"
-							>Нажимая кнопку <b>“Получить предложение”</b> Вы даете согласие на обработку своих <a style="color: inherit; text-decoration: underline" target="_blank" href="/policy"><b>персональных данных</b></a></span
-						>
-					</label>
-				</form>
-			</div>
+            <div class="modal-wrapper">
+                <picture>
+                    <source class="modal-credit-back" srcset="./assets/img/credit-back-mob.webp" media="(max-width: 1024px)" />
+                    <img class="modal-credit-back" src="./assets/img/modal-get-bg.webp" alt="Абстрактное изображение" />
+                </picture>
+                <div class="modal-box">
+                    <p class="modal-title"
+                        ><span>Получите лучшее</span><br />
+                        предложение на покупку автомобиля</p
+                    >
+                    <form class="modal-form" action="">
+                        <input name="phone" class="form-tel number-mask" type="name" placeholder="Имя" required />
+                        <input name="phone" class="form-tel number-mask" type="tel" placeholder="+ 7 (___) ___-__-__" required />
+                        <button class="form-btn js--send-btn modal-btn" type="submit">
+                            <p>Получить предложение</p>
+                        </button>
+                        <label class="form-checkbox-container">
+                            <input type="hidden" name="carbrand" value="" />
+                            <input type="hidden" name="carmodel" value="" />
+                            <input type="hidden" name="carequipment" value="" />
+                            <input type="hidden" name="carprice" value="" />
+                            <input type="hidden" name="carcolor" value="" />
+                            <input type="hidden" name="url" value="{{ url_current() }}" />
+                            <input type="hidden" name="idtype" value="201" />
+                            <input class="form-checkbox" type="checkbox" name="" checked required />
+                            <span class="custom-checkbox"><img class="check" src="./assets/img/ico/check.webp" alt="" /></span>
+                            <span class="form-text"
+                                >Нажимая кнопку <b>“Получить предложение”</b> Вы даете согласие на обработку своих <a style="color: inherit; text-decoration: underline" target="_blank" href="/policy"><b>персональных данных</b></a></span
+                            >
+                        </label>
+                    </form>
+                </div>
+            </div>
 		</section>
 		<section data-modal id="modal-thanks" class="modal-thanks hidden padding">
 			<div class="modal-thanks-box">
