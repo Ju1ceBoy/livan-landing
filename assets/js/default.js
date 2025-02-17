@@ -32,7 +32,7 @@ window.addEventListener("DOMContentLoaded", () => {
         };
         $.mask.definitions['~'] = '[49]';
         $("input[type='tel']").click(function () {
-            $(this).setCursorPosition(2);
+            $(this).setCursorPosition(4);
         }).mask("+7 (~99) 999-99-99", {
             placeholder: "_"
         });
