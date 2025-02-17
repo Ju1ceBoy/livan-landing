@@ -1,4 +1,4 @@
-@import url(../assets/fonts/Manrope/stylesheet.css);
+@import url(../fonts/Manrope/stylesheet.css);
 @font-face {
   font-family: "Bicubik";
   src: url("../fonts/Bicubik.ttf");
@@ -2346,7 +2346,7 @@ footer {
   max-width: 525px;
   width: 100%;
   height: 322px;
-  background: url(../assets/img/modal-thx-bg.png) no-repeat;
+  background: url(../img/modal-thx-bg.png) no-repeat;
 }
 
 .modal-thanks-box {
@@ -2520,7 +2520,7 @@ footer {
             flex-direction: column;
     width: 100%;
     height: 0px;
-    background: url(../assets/img/header-nav-menu.png);
+    background: url(../img/header-nav-menu.png);
     position: fixed;
     top: 75px;
     left: 0;
@@ -2560,7 +2560,7 @@ footer {
     color: #fff;
   }
   .header-info {
-    border-image-source: url(../assets/img/border-header-mob.png);
+    border-image-source: url(../img/border-header-mob.png);
     height: 210px;
     padding: 0;
     gap: 15px;
@@ -2607,7 +2607,7 @@ footer {
   }
   .benefits-wrapper {
     border: 16px solid #fff;
-    border-image-source: url(../assets/img/border-benefits.png);
+    border-image-source: url(../img/border-benefits.png);
     border-image-slice: 35;
     width: 100%;
     height: 100%;
@@ -2983,7 +2983,7 @@ footer {
     overflow: hidden;
   }
   .header-info {
-    border-image-source: url(../assets/img/border-header-mob.png);
+    border-image-source: url(../img/border-header-mob.png);
     height: 210px;
     padding: 0;
     gap: 15px;
@@ -3030,7 +3030,7 @@ footer {
   }
   .benefits-wrapper {
     border: 16px solid #fff;
-    border-image-source: url(../assets/img/border-benefits.png);
+    border-image-source: url(../img/border-benefits.png);
     border-image-slice: 35;
     width: 100%;
     height: 100%;
@@ -3706,7 +3706,7 @@ footer {
   .modal-get-offer {
     max-width: 360px;
     height: 320px;
-    background-image: url(../assets/img/modal-get-mob.png);
+    background-image: url(../img/modal-get-mob.png);
   }
   .modal-get-offer > .modal-box {
     margin: 0;
@@ -3769,7 +3769,7 @@ footer {
   .modal-credit {
     max-width: 360px;
     height: 320px;
-    background-image: url(../assets/img/modal-credit-mob.png);
+    background-image: url(../img/modal-credit-mob.png);
   }
   .modal-credit > .modal-box {
     margin: 0;
@@ -3827,7 +3827,7 @@ footer {
     height: 14px;
   }
   .modal-thanks {
-    background-image: url(../assets/img/modal-thx-mob.webp);
+    background-image: url(../img/modal-thx-mob.webp);
   }
   .modal-thanks-box {
     max-width: 360px;
