@@ -2237,7 +2237,7 @@ footer {
     height: 400px;
 }
 
-.modal-credit > .modal-box {
+ .modal-box {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2253,7 +2253,7 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
-  padding: 34px 31px 22px 22px;
+  padding: 36px 31px 22px 22px;
 }
 
 .modal-form {
